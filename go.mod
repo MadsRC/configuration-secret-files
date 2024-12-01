@@ -1,4 +1,4 @@
-module github.com/MadsRC/configuration-secret-files
+module github.com/MadsRC/configsilly
 
 go 1.23
 

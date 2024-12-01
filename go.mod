@@ -1,4 +1,4 @@
-module configuration-secret-files
+module github.com/MadsRC/configuration-secret-files
 
 go 1.23
 

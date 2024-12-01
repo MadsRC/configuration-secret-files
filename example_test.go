@@ -3,7 +3,7 @@ package configuration_secret_files_test
 import (
 	"fmt"
 	"github.com/BoRuDar/configuration/v4"
-	configuration_secret_files "github.com/MadsRC/configsilly"
+	configuration_secret_files "github.com/MadsRC/configuration-secret-files"
 	"os"
 	"path/filepath"
 )

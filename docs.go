@@ -14,7 +14,7 @@
 // A new provider is created with the [NewProvider] function. The provider is configured with options that are passed
 // as functions to the [NewProvider] function.
 //
-// Options
+// # Options
 //
 // Options used to configured the provider can be set globally or per provider. Global options are applied to all new
 // providers. They can be set with the [GlobalOptions] variable. Options set per provider overwrite the global options.
@@ -24,7 +24,7 @@
 // Additionally, the documentation for the [Options] struct provides information about the available options and
 // their default values.
 //
-// Security of the secret files
+// # Security of the secret files
 //
 // The nature of this provider inevitably means that your secrets will be written in plain text to your filesystem.
 // This is intentional, albeit not ideal. It is meant as an alternative to providing secrets as environment variables
@@ -32,5 +32,4 @@
 //
 // Please make sure to assess the environment in which you plan to handle secrets, and only use this provider if you
 // are confident that writing the secrets to the filesystem is secure more secure than other methods.
-
 package configuration_secret_files

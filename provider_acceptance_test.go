@@ -1,8 +1,8 @@
 package configuration_secret_files_test
 
 import (
-	configuration_secret_files "configuration-secret-files"
 	"github.com/BoRuDar/configuration/v4"
+	configuration_secret_files "github.com/MadsRC/configuration-secret-files"
 	"github.com/stretchr/testify/require"
 	"os"
 	"testing"

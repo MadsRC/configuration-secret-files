@@ -21,7 +21,7 @@ var defaultOptions = Options{
 	DirectoryMustExist: true,
 }
 
-// GlobalOptions is a list of Options that will be applied to all new providers.
+// GlobalOptions is a list of [Options] that will be applied to all new providers.
 var GlobalOptions []Option
 
 // Option is an option for configuring a [Provider].
@@ -45,28 +45,28 @@ func newFuncOption(f func(*Options)) *funcOption {
 	}
 }
 
-// WithDirectory sets the [Options.Directory] to the specified value.
+// WithDirectory sets the [Options].Directory to the specified value.
 func WithDirectory(directory string) Option {
 	return newFuncOption(func(opts *Options) {
 		opts.Directory = directory
 	})
 }
 
-// WithTag sets the [Options.Tag] to the specified value.
+// WithTag sets the [Options].Tag to the specified value.
 func WithTag(tag string) Option {
 	return newFuncOption(func(opts *Options) {
 		opts.Tag = tag
 	})
 }
 
-// WithMaxSize sets the [Options.MaxSize] to the specified value.
+// WithMaxSize sets the [Options].MaxSize to the specified value.
 func WithMaxSize(maxSize int64) Option {
 	return newFuncOption(func(opts *Options) {
 		opts.MaxSize = maxSize
 	})
 }
 
-// WithDirectoryMustExist sets the [Options.DirectoryMustExist] to the specified value.
+// WithDirectoryMustExist sets the [Options].DirectoryMustExist to the specified value.
 func WithDirectoryMustExist(mustExist bool) Option {
 	return newFuncOption(func(opts *Options) {
 		opts.DirectoryMustExist = mustExist
